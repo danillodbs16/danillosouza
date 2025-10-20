@@ -6,26 +6,72 @@
   <title>Danillo Barros de Souza — Academic</title>
   <meta name="description" content="Academic page for Danillo Barros de Souza (ORCID: 0000-0002-7762-8862)">
   <style>
-    :root{ --bg:#f7f9fb; --card:#ffffff; --muted:#6b7280; --accent:#0f62fe; --maxw:900px }
+    :root{
+      --bg: #f3f2ef; /* LinkedIn-style light cream background */
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0073b1; /* LinkedIn blue accent */
+      --maxw: 900px;
+    }
     *{box-sizing:border-box}
-    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial; margin:24px; background:var(--bg); color:#0b1220}
+    body{
+      font-family: Inter, system-ui, Segoe UI, Roboto, Helvetica, Arial;
+      margin: 24px;
+      background: var(--bg);
+      color: #1d2226; /* darker main text for better contrast */
+    }
     .container{max-width:var(--maxw); margin:0 auto}
     header{display:flex; gap:18px; align-items:center}
-    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,#e6f0ff,#fff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    .avatar{
+      width: 96px;
+      height: 96px;
+      border-radius: 50%; /* circular image */
+      object-fit: cover;  /* keeps aspect ratio, fills circle */
+      display: block;
+    }
     h1{margin:0;font-size:1.6rem}
     .meta{color:var(--muted); margin-top:6px}
-    .card{background:var(--card); padding:18px; border-radius:12px; box-shadow:0 6px 18px rgba(20,30,60,0.06); margin-top:18px}
+    .card{
+      background:var(--card);
+      padding:18px;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(20,30,60,0.06);
+      margin-top:18px;
+    }
     .grid{display:grid; grid-template-columns: 1fr 320px; gap:18px}
     @media (max-width:880px){ .grid{grid-template-columns: 1fr} }
-    a.button{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;border:1px solid #e6eefc;color:var(--accent);background:linear-gradient(180deg,#fff,#f3f8ff);font-weight:600}
+    a.button{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      border:1px solid #e6eefc;
+      color:var(--accent);
+      background:linear-gradient(180deg,#fff,#f3f8ff);
+      font-weight:600;
+    }
     ul{margin:0;padding-left:18px}
     .muted{color:var(--muted)}
     .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
     .small{font-size:0.9rem}
     footer{margin-top:28px;color:var(--muted);font-size:0.9rem}
-    .badge{display:inline-block;padding:6px 8px;border-radius:999px;background:#eef6ff;color:#0340a3;font-weight:600;font-size:0.85rem}
+    .badge{
+      display:inline-block;
+      padding:6px 8px;
+      border-radius:999px;
+      background:#eef6ff;
+      color:var(--accent);
+      font-weight:600;
+      font-size:0.85rem;
+    }
     .event-date{font-weight:600;margin-right:8px}
-    .event{padding:10px;border-radius:8px;border:1px solid #f0f4fb;margin-bottom:8px;background:linear-gradient(180deg,#fff,#fcfeff)}
+    .event{
+      padding:10px;
+      border-radius:8px;
+      border:1px solid #f0f4fb;
+      margin-bottom:8px;
+      background:linear-gradient(180deg,#fff,#fcfeff)
+    }
     .note{font-size:0.9rem;color:#374151}
     .links a{display:inline-block;margin-right:12px}
     .download{margin-left:8px}
@@ -35,15 +81,10 @@
 <body>
   <div class="container">
     <header>
-      <div class="avatar">DB</div>
+      <img class="avatar" src="figs/Danillo_Barros_de_Souza.png" alt="Danillo Barros de Souza">
       <div>
-        <h1>Danillo Barros de Souza <span class="badge">ORCID: 0000-0002-7762-8862</span></h1>
+        <h1>Danillo Barros de Souza <span class="badge">Webpage</span></h1>
         <div class="meta-row meta small">
-          <div>danillo.dbs16@gmail.com</div>
-          <div>•</div>
-          <div><a href="https://github.com/danillodbs16" target="_blank" rel="noopener">GitHub / danillodbs16</a></div>
-          <div>•</div>
-          <div><a href="https://orcid.org/0000-0002-7762-8862" target="_blank" rel="noopener">ORCID profile</a></div>
         </div>
       </div>
     </header>
@@ -53,83 +94,92 @@
         <section class="card" id="about">
           <div class="section-title">
             <h2 style="margin:0">Brief resume</h2>
-            <div class="small muted">Academic profile</div>
           </div>
-          <p class="note">Dr. Danillo Barros de Souza. Replace this paragraph with your actual brief biography: education, current affiliation, main research areas and a one-line summary of your work.</p>
-          <p class="muted small">Suggested structure (editable):</p>
-          <ul>
-            <li><strong>Education:</strong> Ph.D. in [Field], Institution (Year).</li>
-            <li><strong>Research interests:</strong> e.g. machine learning, computational biology, remote sensing, data visualization.</li>
-            <li><strong>Current position:</strong> e.g. Postdoc / Researcher / Lecturer at [Institution].</li>
-          </ul>
+          <p class="note">Postdoctoral Research Fellow at Basque Center for Applied Mathematics (BCAM), Mathematical, Computational and Experimental Neuroscience (MCEN) Group, Universidad del País Vasco (UPV), Basque Country, Spain. My research focuses on Topological and Geometrical data analysis for big data, with applications to time-series, protein, and neuronal data, including fMRI and MEG datasets, image processing, clustering, and machine learning algorithms.</p>
           <p>
-            <a class="button" href="#contact">Contact</a>
-            <a class="button download" href="#" onclick="alert('Replace with link to your CV PDF or upload and link it here.');return false;">Download CV (PDF)</a>
+            <a class="button download" href="preprints/Danillo_CV.pdf" target="_blank">Download CV (PDF)</a>
           </p>
+        </section>
+
+        <section class="card" id="education">
+          <div class="section-title">
+            <h2 style="margin:0">Education</h2>
+          </div>
+          <ul>
+            <li>Certificated Degree on Applied Artificial Intelligence, Universidad del País Vasco (UPV/EHU), 03/2025 – 09/2025; Topic: Machine learning methods for Depression detection.</li>
+            <li>PhD in Mathematics, Universidade Federal de Pernambuco, Brazil, 2017–2021; Thesis: Topological and Geometric approaches in Epidemiology.</li>
+            <li>MSc in Mathematics, Universidade Federal de Pernambuco, Brazil, 2015–2017; Thesis: Fock space approach to stochastic epidemic models.</li>
+            <li>BSc in Mathematics, Universidade Federal de Pernambuco, Brazil, 2009–2014; Focus: Asymptotic behavior of 2D systems & Finsler geometry for coral bleaching modeling.</li>
+          </ul>
+        </section>
+
+        <section class="card" id="experience">
+          <div class="section-title">
+            <h2 style="margin:0">Professional Experience</h2>
+          </div>
+          <ul>
+            <li>Postdoctoral Research Fellow at BCAM, MCEN Group, UPV, Spain, 03/2021 – present; Supervisor: Prof. Serafim Rodrigues. Research on Topological and Geometrical approaches to analyze fMRI Data.</li>
+          </ul>
         </section>
 
         <section class="card" id="research">
           <div class="section-title">
             <h2 style="margin:0">Track record &amp; research</h2>
-            <div class="small muted">Summary of achievements</div>
           </div>
-          <h3 class="small" style="margin-bottom:6px">Research interests</h3>
+          <h3 class="small">Research interests</h3>
           <ul>
-            <li>Machine learning for environmental data</li>
-            <li>Time-series analysis and forecasting</li>
-            <li>Reproducible scientific computing</li>
+            <li>Machine Learning and Deep Learning Applications</li>
+            <li>Data Analysis</li>
+            <li>Network Analysis</li>
+            <li>Topological & Geometrical Data Analysis</li>
+            <li>Time-Series and Protein/Neuronal Data Analysis</li>
           </ul>
-          <h3 class="small" style="margin-top:12px;margin-bottom:6px">Selected outputs</h3>
+          <h3 class="small">Software & Repositories</h3>
           <ul>
-            <li><strong>Grants:</strong> [Grant title] — [Role] — [Funder] — [Year]</li>
-            <li><strong>Software &amp; code:</strong> <a href="https://github.com/danillodbs16" target="_blank">GitHub / danillodbs16</a></li>
+            <li>FastForman: Efficient Forman-Ricci curvature computation for higher-order simplicial complexes. Python, BCAM, 09/05/2024.</li>
+            <li>FastKnill: Euler characteristics and Knill curvature computation from networks, Python, 03/04/2025.</li>
           </ul>
         </section>
 
         <section class="card" id="preprints">
           <div class="section-title">
             <h2 style="margin:0">Preprints</h2>
-            <div class="small muted">Early access research outputs</div>
           </div>
-          <p class="muted small">This section lists preprints available for public access. Each entry can include a direct download link from your Google Drive (public share link).</p>
           <ul>
-            <li>
-              <strong>Souza, D.B.</strong> (2025). <em>Example preprint title</em>. <span class="muted">Preprint on ResearchGate / arXiv / institutional repository</span> — <a href="https://drive.google.com/file/d/EXAMPLE_ID/view?usp=sharing" target="_blank">Download PDF</a>
-            </li>
-            <li>
-              <strong>Souza, D.B.; Coauthor, A.</strong> (2024). <em>Another preprint title</em>. <span class="muted">Submitted to Journal XYZ</span> — <a href="https://drive.google.com/file/d/EXAMPLE_ID/view?usp=sharing" target="_blank">Download PDF</a>
-            </li>
+            <li>D. B. de Souza, J. Del Ser "Detecting Depression from Social Media Text using Manifold Learning", Preprint, <a href="preprints/AI_2025_project_Danillo_Javier.pdf" target="_blank">PDF file</a></li>
+            <li>D. B. de Souza et al., "Alternative set-theoretical algorithms for efficient computations of cliques in Vietoris-Rips complexes", Arxiv, <a href="preprints/2502.14593v2.pdf" target="_blank">2502.14593v2</a></li>
+            <li>R. Cavalcanti et al., "Topological Data Analysis in Finsler Spaces", Arxiv, <a href="preprints/2509.12660v2.pdf" target="_blank">2509.12660v2</a></li>
+            <li>D. B. de Souza et al., "Efficient Decomposition of Forman-Ricci Curvature on Vietoris-Rips Complexes and Data Applications", Arxiv, <a href="preprints/2504.21601v2.pdf" target="_blank">504.21601v2</a></li>
           </ul>
-          <p class="note">Replace <code>EXAMPLE_ID</code> in the URL with your actual Google Drive file ID. To make a preprint downloadable, set your Drive file to <em>Anyone with the link → Viewer</em> and copy the shareable link.</p>
-        </section>
-
-        <section class="card" id="events">
-          <div class="section-title">
-            <h2 style="margin:0">Events — upcoming &amp; past</h2>
-          </div>
-          <div class="event">
-            <div><span class="event-date">2026-03-15</span><strong>Workshop on Example Topic</strong> — Role: Invited speaker</div>
-            <div class="muted small">Location: City, Country</div>
-          </div>
-          <div class="event">
-            <div><span class="event-date">2024-10-10</span><strong>Data Science Symposium</strong> — Role: Oral presentation</div>
-            <div class="muted small">Location: University XYZ</div>
-          </div>
         </section>
 
         <section class="card" id="publications">
           <div class="section-title">
-            <h2 style="margin:0">Publications</h2>
+            <h2 style="margin:0">Highlighted Publications</h2>
           </div>
           <ul>
-            <li>Doe, J.; Souza, D.B. (2022). <em>Example paper title</em>. <strong>Journal Name</strong>. <a href="#">https://doi.org/xxx</a></li>
+            <li>D. B. de Souza, J. T. Da Cunha, et al., "Using discrete Ricci curvatures to infer COVID-19 epidemic network fragility and systemic risk", J. Stat. Mech., 2021. DOI: <a href="https://doi.org/10.1088/1742-5468/abed4e" target="_blank">10.1088/1742-5468/abed4e</a></li>
+            <li>D. B. de Souza, E. F. dos Santos, F. A. Santos, "The Euler characteristic as a topological marker for outbreaks in vector-borne disease", J. Stat. Mech., 2022. DOI: <a href="https://doi.org/10.1088/1742-5468/aca0e5" target="_blank">10.1088/1742-5468/aca0e5</a></li>
+            <li>D. B. de Souza et al., "Fock-space approach to stochastic susceptible-infected-recovered models", Phys. Rev. E, 2022. DOI: <a href="https://doi.org/10.1103/PhysRevE.106.014136" target="_blank">10.1103/PhysRevE.106.014136</a></li>
+            <li>D. B. de Souza, J. T. Da Cunha, R. A. Moreira, F. A. N. Santos, J. Jost & S. Rodrigues, “Efficient set-theoretic algorithms for computing high-order Forman-Ricci curvature on abstract simplicial complexes”, Proc. R. Soc. A (2025). DOI: <a href="https://doi.org/10.1098/rspa.2024.0364" target="_blank">10.1098/rspa.2024.0364</a></li>
           </ul>
+        </section>
+
+        <section class="card" id="events">
+          <div class="section-title">
+            <h2 style="margin:0">Past and Upcoming Events</h2>
+          </div>
+          <div class="event"><span class="event-date">19–30/01/2026</span> CIMPA School, “The Mathematics of Complex Systems: Theory and Applications”, Recife, Brazil</div>
+          <div class="event"><span class="event-date">03/10/2025</span> “Introducing Efficient Algorithms for Computing Higher-Order Forman-Ricci Curvature from Complex Networks”, Theory Seminar, University of Colorado Boulder, USA</div>
+          <div class="event"><span class="event-date">19–22/05/2025</span> BCAM Severo Ochoa Course: Machine Learning, Pamplona, Spain</div>
+          <div class="event"><span class="event-date">25–28/06/2024</span> ScaDs.AI Summer School 2024, Leipzig, Germany</div>
+          <div class="event"><span class="event-date">19–21/09/2022</span> BrainHack, Amsterdam, Netherlands</div>
         </section>
       </div>
 
       <aside>
         <div class="card" id="contact">
-          <h3 style="margin-top:0">Contact</h3>
+          <h3>Contact</h3>
           <p class="muted">Email: <a href="mailto:danillo.dbs16@gmail.com">danillo.dbs16@gmail.com</a></p>
           <p class="muted">GitHub: <a href="https://github.com/danillodbs16" target="_blank">github.com/danillodbs16</a></p>
           <p class="muted">ORCID: <a href="https://orcid.org/0000-0002-7762-8862" target="_blank">0000-0002-7762-8862</a></p>
@@ -138,7 +188,7 @@
     </main>
 
     <footer>
-      <div>Built for academic purposes. Template editable — replace placeholders with verified CV, publication list, event info, and preprint links.</div>
+      <div>Academic webpage updated from Danillo Barros de Souza's CV.</div>
     </footer>
   </div>
 </body>
